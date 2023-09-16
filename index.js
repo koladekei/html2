@@ -66,3 +66,94 @@ const kvar = " var is used to declear a vairable that can be reasigned"
 const klet = " let is similar but has a block scope"
 const kconst = " const is used to declear a vairable that cannot be reasined"
 console.log( " In Javascript" + kvar + " while" + klet + " and" + kconst)
+
+// null
+
+let gong = "rice"; //empty value is null
+console.log(gong)
+
+// let geng = ; //undefined
+// console.log(geng)
+
+// () is Params or placeholder
+
+function money() { //declaread a function
+    console.log(" send money my fans");
+}
+
+money() //invoke or call argument
+
+function greet(name){
+    console.log ("hello" + name)
+}
+greet(" dammy")
+greet(" kei")
+
+function addition(a, b){
+console.log(a + b)}
+
+addition(2,2)
+addition(3,2)
+addition(4,2)
+addition(5,2)
+
+let sum1 = 2 + 2
+let sum2 = 3 + 2
+let sum3 = 4 + 2
+let sum4 = 5 + 2
+
+// function that returns countries and the first 3 letter of the country
+
+function country1(abr){
+    console.log("Nigeria" + abr)
+}
+country1(" nig")
+
+function country2(spanish){
+    console.log("Spain" + spanish)
+}
+country2(" esp")
+
+function country3(white){
+    console.log("united state" + white)
+}
+country3( " us")
+
+function country4(british){
+    console.log("England" + british)
+}
+country4( " Eng")
+
+function country5(africa){
+    console.log("liberia" + africa)
+}
+country5( " lib")
+
+
+function country(country, abr){
+console.log(country + " " + abr)
+}
+
+country("Nigeria" , "nig")
+country("Spain" , "esp")
+country("England" , "eng")
+
+function addition(a, b ){
+    console.log(a + b)
+console.log( a + " + " + b + " = ", a + b )
+}
+
+addition(4,9)
+addition(6,8)
+
+// assignment
+// multiply and subtraction?
+function multiply(a, b){
+console.log(a + " * " + b + " =", a * b  )
+}
+multiply(3,3)
+
+function subtraction(a,b){
+    console.log(a + " - " + b + " = ", a - b)
+}
+subtraction(9,2)
