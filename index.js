@@ -157,3 +157,243 @@ function subtraction(a,b){
     console.log(a + " - " + b + " = ", a - b)
 }
 subtraction(9,2)
+
+//objects
+//object is a collection of properties
+//properties can be kay is a value
+
+let name1 = "kei"
+
+let car = {
+    color: "red",
+    brand:"toyota",
+    platenumber:"2468135",
+    model:"corolla",
+    tyrecolor:"black",
+    year:2010
+}
+
+console.log(car.model)
+console.log(car["color"])
+
+//access an obj
+console.log("old obj", car)
+car.model = "kei model"
+console.log("new obj", car)
+
+let house ={
+    color: "blue",
+    structure: "duplex",
+    car: "5 cars",
+    address: {
+        streetname: "dada street",
+        localgovt: "jagunjagun",
+        state: "lagos"
+
+    },
+
+    build: function () {
+        console.log("i have built it")
+    }
+}
+console.log(house.address.localgovt)
+// console.log(house.build())
+
+console.log(house.structure)
+
+console.log(house["color"])
+
+console.log( "old obj", house)
+house.structure = "flat"
+console.log("new obj", house)
+
+//Array
+
+let cars = [ "toyota", "benz", "lexus", "bently"]
+
+//access an array
+
+console.log(cars);
+
+console.log(cars[2])
+
+cars[2] = "porshe"
+
+console.log(cars)
+
+let food =[ "rice", "beans", "spag", "bread"]
+
+console.log(food);
+console.log(food[2])
+food[2] = "garri"
+
+console.log(food)
+
+let person =[{
+    gender: "male",
+    ageBracket: "15-20",
+    school: "queens college",
+    adress:{
+        street: "adekunle street",
+        city: "akure"
+    }
+},
+{
+    gender: "female",
+    ageBracket: "15-20",
+    school: "queens college",
+    adress:{
+        street: "adekunle street",
+        city: "lagos"
+    }
+},
+"Adebayo"
+
+
+]
+//access both gender
+//change city to ogun
+//change adebayo to my name
+
+// console.log(person);
+console.log(person[0].gender)
+
+console.log(person[1].gender)
+
+// console.log(person[0].adress.city)
+// person.city = "ogun"
+// console.log(person);
+// console.log(person[1]);
+// console.log(person[1].adress)
+// console.log(person[1].adress.city)
+// person[0].adress.city = "ogun"
+
+console.log(person);
+console.log(person[2])
+person[2] = "kolade"
+// console.log(person)
+
+console.log(person);
+console.log(person[0].adress);
+// console.log.person[0].adress[1] = "ogun"
+
+// if(comdition){
+//     //code to be executed if the condition is true
+// }
+
+//> = greater than
+//< = less than
+//<= = less than or equal to
+//>= = greater than or equal to
+//== =double equals to
+// === =  triple equaks to
+// != = not eqals to
+// !==
+
+
+// let agee = 5;
+
+// if (age>20){
+//     console.log("age is greater than 20")
+// }else if (agee < 3 ) {
+//     console.log("age is less than 3")
+// }else {
+//     console.log("no")
+// }
+
+// let dogBARK = true;
+// let lionRoar = false
+
+// if (dogBARK){
+//     console.log("age is greater than 20")
+// }else if (!lionRoar) {
+//     console.log("age is less than 3")
+// }
+// else if (!dogBARK){
+//     console.log(maybe)
+// }
+// else {
+//     console.log("no")
+// }
+
+// if (!dogBARK){
+//     console.log("age is greater than 20")
+// }else if (!!dogBARK){
+//     console.log("ccc")
+// }
+// else if (!lionRoar) {
+//     console.log("age is less than 3")
+// }
+// else if (!dogBARK){
+//     console.log(maybe)
+// }
+// else {
+//     console.log("no")
+// }
+// // ||-OR && - AND
+// if(2!=2){
+//     console.log("yes")
+// }else{
+//     console.log("no")
+// }
+
+// let gage = 18;
+
+// if (gage !== "18") {
+//     console.log("yes age is greater");
+
+// }
+
+// if (gage > "18") {
+//     console.log("yes age is greater");
+
+// }else{
+//     console.log("this condition is false")
+// }
+
+// if (gage > "18") {
+//     console.log("yes age is greater");
+
+// } else if (age >= 20){
+//     console.log("yes age")
+// }else{
+//     console("co condition")
+// }
+
+//conditional statement
+
+// let rainfall = true
+// let sunshine = false
+
+// if (rainfall) {
+//     console.log("yes rain fall")
+// } else {
+// console.log(" no rain didnt fall")
+// }
+
+
+
+// let dogBark = true;
+// let tobiSleepsaLot = true;
+
+// if (dogBark || tobiSleepsaLot){
+//     console.log("yes")
+// }else{
+//     console.log(nah)
+// }
+
+
+
+let citizenage = prompt("put in your age in figure e.g 22")
+
+const Citizen = prompt("Are you a citizen of Nigeria: (Yes/No)") 
+
+if (citizenage >= 18 && Citizen ==="Yes"){
+    alert("You are above 18 therefore you can cast your vote")
+}else if (citizenage>= 18 && Citizen === "No"){
+    alert("You are above 18 but not a citizen therefore you cant vote")
+}else if (citizenage <18 && Citizen === "Yes"){
+    alert("Dear user; Being a citizen alone doesnt count you are below 18 therefore you cant't cast your vote")
+}else if (citizenage <18 && Citizen === "No"){
+    alert("Below 18 years and not a citizen of Nigeria therefore you are not eligible to vote")
+}
