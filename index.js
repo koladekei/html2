@@ -385,8 +385,10 @@ console.log(person[0].adress);
 
 
 let citizenage = prompt("put in your age in figure e.g 22")
+console.log(citizenage)
 
-const Citizen = prompt("Are you a citizen of Nigeria: (Yes/No)") 
+let Citizen = prompt("Are you a citizen of Nigeria: (Yes/No)") 
+console.log(Citizen)
 
 if (citizenage >= 18 && Citizen ==="Yes"){
     alert("You are above 18 therefore you can cast your vote")
